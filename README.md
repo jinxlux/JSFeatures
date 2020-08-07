@@ -16,3 +16,8 @@ Images in imgs should be named as following pattern: ***1.jpg, 2.jpg, 3.jpg, etc
 Hence, 1.jpg will be the pages' background when the current time is in first time range give. So are following images.
 Default image called ***default.jpg*** should also be inclued in the imgs directory.
 If images of specific time range do not exist, default image should be shown. If default image does not exist either, pages will have white background.
+
+**Other Functions May Try **
+
+In features.js, a function called resourcesExist(url) exists. It can detect whether a resource requested exist in the server side.
+It is mainly creted as a helper function for changeBackGround(), but users can use it for their own purpose if they would like to check resources.
