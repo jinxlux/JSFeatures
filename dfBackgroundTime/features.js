@@ -42,6 +42,7 @@ function changeBackGround() {
 }
 
 /* 
+check whether a resource located by the given url exists
  */
 function resourcesExist(url) {
     var http;
