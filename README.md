@@ -21,3 +21,10 @@ If images of specific time range do not exist, default image should be shown. If
 
 In features.js, a function called resourcesExist(url) exists. It can detect whether a resource requested exist in the server side.
 It is mainly creted as a helper function for changeBackGround(), but users can use it for their own purpose if they would like to check resources.
+
+## countdown
+This is very common feature we can see in many sites today.
+Users can call countDown(endtime, id) in the javascript file to implement countdown feature in their page.
+Endtime is the time point users would like to end the countdown.
+Id is the id of a specific html element where users would like to shown their countdown.
+(Users can modify basic if they try to change the form of countdown, or if they try to locate elements by class, tag name,tec.)
