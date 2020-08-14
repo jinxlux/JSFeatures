@@ -1,4 +1,4 @@
-/*
+/**
 change the background image of a page according to the current time and specific time ranges given
  */
 function changeBackGround() {
@@ -41,8 +41,10 @@ function changeBackGround() {
     }
 }
 
-/* 
-check whether a resource located by the given url exists
+/**
+ * check whether a resource located by the given url exists
+ * @param {*} url a string of url of the resource
+ * @returns true if the resource exists; false otherwise
  */
 function resourcesExist(url) {
     var http;
