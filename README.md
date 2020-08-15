@@ -17,7 +17,7 @@ Hence, 1.jpg will be the pages' background when the current time is in first tim
 Default image called ***default.jpg*** should also be inclued in the imgs directory.
 If images of specific time range do not exist, default image should be shown. If default image does not exist either, pages will have white background.
 
-**Other Functions May Try **
+**Other Functions May Try**
 
 In features.js, a function called resourcesExist(url) exists. It can detect whether a resource requested exist in the server side.
 It is mainly creted as a helper function for changeBackGround(), but users can use it for their own purpose if they would like to check resources.
@@ -28,3 +28,10 @@ Users can call countDown(endtime, id) in the javascript file to implement countd
 Endtime is the time point users would like to end the countdown.
 Id is the id of a specific html element where users would like to shown their countdown.
 (Users can modify basic if they try to change the form of countdown, or if they try to locate elements by class, tag name,tec.)
+
+## passwordHideShow
+This is a common feature for many password input field. When users clicking the eye icon, we can see the
+password. When they click the icon again, the password is hidden. 
+In html file, img element of the eye should have a specific id, and input field relates to that icon should
+also have one. Therefore, it is easy to figure out which eye icon relates to a identical input field. 
+Also, if anyone would like to use showHidePassword(iconId, inputId) in the js file directly, they have to have a directory which includes 2 icons, which shoud be called 'closeEye.png' and 'openEye.png' separately. Otherwise, they need to modify the code. CSS style can use the setting in the index.html.
