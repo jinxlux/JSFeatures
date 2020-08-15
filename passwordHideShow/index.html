@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>password input</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        .box {
+            position: relative;
+            width: 400px;
+            border-bottom: 1px solid grey;
+            margin: 100px auto;
+        }
+        
+        #psw {
+            position: absolute;
+            left: 50px;
+            bottom: 5px;
+            width: 350px;
+            border: hidden;
+            outline: none;
+        }
+        
+        #eye-icon {
+            width: 35px;
+            height: 20px;
+            position: absolute;
+            bottom: 5px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Password</h1>
+    <div class="box">
+        <label for="psw">
+            <img src="icons/closeEye.png" id="eye-icon">
+        </label>
+        <input type="password" name="identification" id="psw">
+    </div>
+
+    <script src='password.js'></script>
+    <script>
+        showHidePassword('eye-icon', 'psw')
+    </script>
+
+
+</body>
+
+</html>
